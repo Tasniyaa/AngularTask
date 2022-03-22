@@ -1,0 +1,16 @@
+
+<!-- <li [ngbNavItem]="2">
+    <div class="nav-menu d-flex flex-column align-items-center py-2" type="button" >
+        <i class="{{ navIcon }}"></i>
+        <span>{{ navIconDetail }}</span>
+    </div>
+    <pre>Active: {{ navNum }}</pre>
+</li> -->
+<li [ngbNavItem]>
+    <a ngbNavLink>
+        <div class="nav-menu d-flex flex-column align-items-center py-2" type="button" >
+            <i class="{{ navIcon }}"></i>
+            <span>{{ navIconDetail }}</span>
+        </div>
+    </a>
+</li>

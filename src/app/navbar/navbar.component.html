@@ -1,0 +1,22 @@
+<div class="container mt-5">
+  
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs my-4">
+    <app-nav-menu *ngFor="let item of navDetails" 
+      class="col-2 p-0"
+      [navNum]="item.num"
+      [navIcon]="item.icon"
+      [navIconDetail]="item.details"
+    ></app-nav-menu>
+  </ul>
+  <div [ngbNavOutlet]="nav"></div>
+  <!-- <div class="d-flex justify-content-center py-3">
+    <app-radios-check *ngFor="let item of radioTitle"
+      [radioTitle]="item.name"
+    ></app-radios-check>
+  </div> -->
+  <app-radios-check></app-radios-check>
+  <app-hotel-search></app-hotel-search>
+  
+</div>
+
+

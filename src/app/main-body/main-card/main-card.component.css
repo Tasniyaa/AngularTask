@@ -1,0 +1,17 @@
+.card-footer{
+    background-color: white;
+    border: white;
+}
+img{
+    height:90%;
+}
+.card{ 
+    box-shadow:2px 2px 2px rgb(211, 206, 206); 
+    border: white;
+}
+.star{
+    color:goldenrod
+}
+h6 {
+    font-weight: bolder;
+}

@@ -1,0 +1,38 @@
+<div class="card my-3" style="width:100%;">
+  <div class="row">
+    <div class="col-3 ">
+      <img src="{{carImg}}" class="card-img-top m-2" alt="...">      
+    </div>
+    <div class="col-9 ps-0">
+      <div class="card-body d-flex justify-content-between">
+        <div class="">
+          <h6 class="card-title m-0">{{cardName}}</h6>
+          <span class="card-text">
+            <small class="text-muted">{{cardPlace}}</small>
+          </span>
+          <div class="star d-flex" >
+            <span class="pe-1" *ngFor="let item of range(cardStar)"><i class="fas fa-star"></i></span>
+          </div>
+        </div>
+        <div class="text-end">
+          <h6 class="m-0">{{cardPrice}}</h6>
+          <span class="">
+            <small class="text-muted">Cost per night</small><br>
+            <small class="text-muted">{{cardTotalPrice}}</small><br>
+            <small class="text-muted">{{cardTaxFee}}</small><br>
+          </span>
+        </div>
+      </div>
+      <div class="card-footer d-flex justify-content-between" id="cardFooter">
+        <div class="hstack gap-2 align-items-end">
+          <i class="bi bi-plus-square pb-1"></i>
+          <p class="m-0">Add to compare</p>
+          <div class="vr mt-3"></div>
+          <i class="bi bi-geo-alt pb-1"></i>
+          <p class="m-0 mt-2">Show on map</p>
+        </div>
+        <a href="#" class="btn btn-primary">Select</a>
+      </div>
+    </div>
+  </div>
+</div>

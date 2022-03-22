@@ -1,0 +1,25 @@
+<div class="bodyy py-4 bg-light">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-3 mt-3 px-0">
+                <app-side-bar
+                (Te2)="cboxTitle($event)"
+                (sendStar)="checkStar($event)"
+                (sendPrice)="checkPrice($event)"
+                ></app-side-bar>
+            </div>
+            <div class="col-9 ps-4">
+                    <!-- <input type="text" class="form-control" [(ngModel)]="filteredString" /> -->
+                    <app-main-card *ngFor = "let x of cardDetails | filter: Te2Recive | ratePipe: sendStarRecive | pricePipe: sendPriceRecive " 
+                     [carImg]="x.carImg"
+                     [cardName]="x.cardName"
+                     [cardPlace]="x.cardPlace"
+                     [cardPrice]="x.cardPrice"
+                     [cardTotalPrice]="x.cardTotalPrice"
+                     [cardTaxFee]="x.cardTaxFee"
+                     [cardStar]="x.rating"
+                    ></app-main-card>
+            </div>
+        </div>
+    </div>    
+</div>

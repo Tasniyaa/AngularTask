@@ -1,0 +1,66 @@
+.b{
+    max-width: 531px;
+}
+
+.dropBtn{
+    width: 100%;
+    height: 50px;
+}
+.date{
+    height: 50px;
+}
+.form {
+    position: relative
+}
+
+.form .bi.bi-geo-alt  {
+    position: absolute;
+    top: 18px;
+    left: 20px;
+    /* color: #9ca3af */
+}
+.bi.bi-geo-alt  {
+
+    top: 18px;
+    left: 20px;
+    /* color: #9ca3af */
+}
+
+.form-input {
+    height: 50px;
+    text-indent: 33px;
+}
+.counterButton{
+    height: 24px;
+    width: 24px;
+    color: rgb(63, 122, 248);
+    background-color: rgb(255, 255, 255);
+    border-color: #eeeeee;
+    -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
+.dropdown-menu.show{
+  width: 285px;
+  -webkit-box-shadow: 0 0 10px #fff;
+  box-shadow: 0 0 10px #fff;
+}
+
+/* .form span {
+    position: absolute;
+    right: 17px;
+    top: 13px;
+    padding: 2px;
+    border-left: 1px solid #d1d5db
+} */
+
+/* .left-pan {
+    padding-left: 7px
+} */
+
+/* .left-pan i {
+    padding-left: 10px
+} */
+/* .form-input:focus {
+    box-shadow: none;
+    border: none
+} */

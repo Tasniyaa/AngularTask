@@ -1,0 +1,17 @@
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand" href="#">{{navTitle}}</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-chevron-up"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <app-check-box *ngFor="let item of checkBox"
+              [title]="item"
+            ></app-check-box>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

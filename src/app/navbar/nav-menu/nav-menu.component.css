@@ -1,0 +1,33 @@
+button.nav-link{
+    color:black;
+    background-color:#F9FAFD;
+    box-shadow:1px 1px 1px #eeecec; 
+}
+.nav-link.active{
+    background-color: rgb(255, 255, 255);
+    border-color:white;
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: rgb(48, 118, 247);
+}
+.nav-tabs .nav-link:hover{
+    border-color: rgb(255, 255, 255)
+}
+
+/* .nav-menu:hover{
+    background-color: white;
+} */
+/* .nav-menu:active{
+    background-color: rgb(255, 255, 255);
+    border-bottom-style:solid;
+    border-bottom-color: rgb(48, 118, 247);
+}
+.nav-menu:focus{
+    background-color: rgb(247, 55, 55);
+}
+
+.active{
+    background-color: rgb(255, 255, 255);
+    border-bottom-style:solid;
+    border-bottom-color: rgb(48, 118, 247);
+} */

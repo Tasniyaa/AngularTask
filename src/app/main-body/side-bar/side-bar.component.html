@@ -1,0 +1,64 @@
+<!-- <p>side-bar works!</p> -->
+<img src="https://staticmapmaker.com/img/google@2x.png" style="width: 100%;" alt="">
+<hr>
+
+<app-sidebar-title [headerName]="'Freebies'"></app-sidebar-title>
+<app-check-box *ngFor="let item of checkBox"
+    [title]="item.title"
+    (Te)="reData($event)"
+></app-check-box>
+<hr>
+
+<div class="">
+    <app-sidebar-title [headerName]="'Recommended filters'"></app-sidebar-title>
+    <app-check-box [title]="'Free breakfast'"></app-check-box>
+</div>
+<hr>
+
+<app-sidebar-title [headerName]="'Property name'"></app-sidebar-title>
+    <!-- <input type="text" class="form-control" [(ngModel)]="filteredString" /> -->
+<hr>
+
+<div class="">
+    <app-sidebar-title [headerName]="'Hotel class'"></app-sidebar-title>
+    <!-- <app-rating></app-rating> -->
+    <ngb-rating  [max]="5" [(rate)]="currentRate" (rateChange)="sendStarNumber()">
+        <ng-template let-fill="fill" let-index="index">
+          <span class="star" [class.filled]="fill === 100">
+            <i class="far fa-star me-1"></i>
+          </span>
+        </ng-template>
+      </ngb-rating>
+      <pre class="mt-2">Rate: <b>{{currentRate}}</b></pre>
+</div>
+<hr>
+
+<app-sidebar-title [headerName]="'Price'"></app-sidebar-title>
+<!-- <app-sidebar-slider></app-sidebar-slider> -->
+<input type="range" class="form-range" min="0" max="100" [(ngModel)]="price" id="customRange2" (click)="sendPriceNumber()">
+{{price}}
+<div class="nightly-base-price border border-dark px-3 mt-3">
+    <app-sidebar-title [headerName]="'Nightly base price'"></app-sidebar-title>
+</div>
+<hr>
+
+<app-sidebar-title [headerName]="'Health and safety'"></app-sidebar-title>
+<div class="d-flex">
+  <span class="text-muted text-small"  >Only show stays with enhanced health and seafty measures</span>
+  <div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+  </div>
+</div>
+<hr>
+
+<!-- <app-sidebar-title [headerName]="'Property name'"></app-sidebar-title>
+<div class="border border-dark p-2">
+    <i class="fas fa-search pe-1"></i>
+    Property name
+</div>
+<hr> -->
+
+<app-sidevar-navtitle
+[navTitle]="'Amentities'"
+></app-sidevar-navtitle>
+<hr>

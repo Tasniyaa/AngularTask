@@ -1,0 +1,21 @@
+<!-- <p>rating works!</p> -->
+<!-- <ng-template #t let-fill="fill">
+    <span class="star" [class.full]="fill === 100">
+      <span class="half" [style.width.%]="fill"><i class="far fa-star fa-2x me-1"></i>
+      </span>
+    </span>
+</ng-template>
+<ngb-rating [max]="5" [(rate)]="currentRate" [readonly]="false"></ngb-rating>
+
+<hr>
+<p>Rate:</p> -->
+ <!-- <b>{{currentRate}}</b> -->
+ <ngb-rating  [max]="5" [(rate)]="currentRate">
+    <ng-template let-fill="fill" let-index="index">
+      <span class="star" [class.filled]="fill === 100">
+        <i class="far fa-star me-1"></i>
+      </span>
+    </ng-template>
+  </ngb-rating>
+  <pre class="mt-2">Rate: <b>{{currentRate}}</b></pre>
+  <!-- <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i> -->
